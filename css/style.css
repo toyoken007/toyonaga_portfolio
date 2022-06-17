@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+body {
+  /* background-image: url("../image/umi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; */
+  font-family: 'Caveat', cursive;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  padding: 20px 0;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+h1:hover {
+  opacity: 0.8;
+}
+
+.header_list {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_list li {
+  font-size: 22px;
+  text-shadow: 3px 4px 4px #000000;
+}
+.p-1 {
+  font-size: 25px;
+  text-shadow: 3px 4px 4px #000000;
+  color: white;
+}
+
+.p-2 {
+  font-size: 20px;
+  text-shadow: 3px 4px 4px #000000;
+  color: white;
+}
+.header_list li {
+  list-style: none;
+}
+
+.header_list ul {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.key_visual {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+.key_visual img {
+  height: auto;
+}
+
+footer {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 2;
+}
+footer p {
+  font-size: 12px;
+  z-index: 2;
+  color: aliceblue;
+  text-shadow: 3px 4px 4px #000000;
+}
+
+.slider {
+  visibility: hidden;
+}
+.slider > div {
+  height: 100vh;
+  overflow: hidden;
+}
+.slider.slick-initialized {
+  visibility: visible;
+}
+
+.slick-prev, .slick {
+  z-index: 2;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}
