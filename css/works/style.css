@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+body {
+  font-family: 'Caveat', cursive;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+h1:hover {
+  opacity: 0.8;
+}
+
+.header_list {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_list li {
+  font-size: 22px;
+  text-shadow: 3px 4px 4px #6e6e6e;
+}
+
+.p-1 {
+  font-size: 25px;
+  text-shadow: 3px 4px 4px #6e6e6e;
+  color: rgb(0, 0, 0);
+}
+
+.p-2 {
+  font-size: 20px;
+  text-shadow: 3px 4px 4px #6e6e6e;
+  color: rgb(0, 0, 0);
+}
+
+.header_list li {
+  list-style: none;
+}
+
+.header_list ul {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.works_h1 {
+  margin-left: 111px;
+  padding: 60px 0;
+}
+
+.works_h2 {
+  margin: 0 auto 30px;
+  text-align: center;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  padding: 15px;
+  width: 250px;
+  color: #010079;
+  text-shadow: 0 0 5px white;
+  border-left: solid 7px #010079;
+  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+.works_wrap { 
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  width: 100%;
+}
+
+.works_h3 {
+  width: 320px;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  margin-bottom: 20px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+.works_img {
+  width: 320px;
+}
+
+.works_comment {
+  margin-top: 30px;
+  width: 320px;
+}
+
+p {
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-weight: bold;
+}
+
+.portfolio_box {
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-weight: bold;
+}
+
+.skill_h2 {
+  margin: 100px auto 30px;
+  text-align: center;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  padding: 15px;
+  width: 250px;
+  color: #010079;
+  text-shadow: 0 0 5px white;
+  border-left: solid 7px #010079;
+  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+
+.skill_list {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 0 auto;
+  color: #668ad8;/*文字色*/
+  border: dashed 2px #668ad8;/*破線 太さ 色*/
+  background: #f1f8ff; /*背景色*/
+  padding: 1px 10px 1px 30px;
+}
+
+.skill_list li {
+  line-height: 1.5;
+  padding: 2px 0;
+}
+
+.portfolio_wrap {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+.portfolio_title h3 {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  margin-bottom: 20px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+.portfolio_img {
+  width: 270px;
+}
+
+.portfolio_skill {
+  margin: 20px 0 0 20px;
+}
+
+.portfolio_skill li {
+  margin: 5px 0;
+}
+footer {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Caveat', cursive;
+}
