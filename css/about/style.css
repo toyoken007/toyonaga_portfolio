@@ -74,9 +74,19 @@ a {
   color: rgb(0, 0, 0);
 }
 
-.about_h1 {
+main {
+  font-weight: bold;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+.about_title {
   margin-left: 111px;
   padding: 60px 0;
+}
+
+.about_title p {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
 }
 
 .about_wrap {
@@ -96,7 +106,15 @@ a {
 }
 
 .about_h2 h2 {
-  font-size: 45px;
+  font-size: 35px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  padding: 15px;
+  width: 250px;
+  color: #010079;
+  text-shadow: 0 0 5px white;
+  border-left: solid 7px #010079;
+  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
 }
 
 .about_h2 {
@@ -106,6 +124,7 @@ a {
 .about_h2 p {
   font-size: 17px;
   font-family: none;
+  margin: 2px 0 0 23px;
 }
 
 .about_comment {
@@ -116,7 +135,15 @@ a {
   margin-top: 45px;
 }
 .gallery h2 {
-  font-size: 45px;
+  font-size: 35px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  padding: 15px;
+  width: 250px;
+  color: #010079;
+  text-shadow: 0 0 5px white;
+  border-left: solid 7px #010079;
+  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
 }
 
 .gallery_img {

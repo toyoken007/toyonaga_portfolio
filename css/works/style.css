@@ -74,9 +74,15 @@ a {
   color: rgb(0, 0, 0);
 }
 
-.works_h1 {
+.works_title {
   margin-left: 111px;
   padding: 60px 0;
+}
+
+.works_title p {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
 }
 
 .works_h2 {
