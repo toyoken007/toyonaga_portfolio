@@ -1,3 +1,55 @@
+<?php
+session_start();
+$post = [
+    'subject' => '',
+    'name'  => '',
+    'kana' => '',
+    'email' => '',
+    'message' => ''
+];
+
+$error = [];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $post['subject'] = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
+    if ($post['subject'] === '') {
+        $error['subject'] = 'blank';
+    }
+
+    $post['name'] = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    if ($post['name'] === '') {
+        $error['name'] = 'blank';
+    }
+
+    $post['kana'] = filter_input(INPUT_POST, 'kana', FILTER_SANITIZE_STRING);
+    if ($post['kana'] === '') {
+        $error['kana'] = 'blank';
+    }
+
+    $post['email'] = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    if ($post['email'] === '') {
+        $error['email'] = 'blank';
+    } else if (!filter_var($post['email'], FILTER_VALIDATE_EMAIL)) {
+        $error['email'] = 'email';
+    }
+
+    $post['message'] = filter_input(INPUT_POST, 'message');
+    if ($post['message'] === '') {
+        $error['message'] = 'blank';
+    }
+
+    if (count($error) === 0) {
+        $_SESSION['form'] = $post;
+        header('Location: check.php');
+        exit();
+    }
+} else {
+    if (isset($_SESSION['form'])) {
+        $post = $_SESSION['form'];
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="jp">
 
@@ -41,37 +93,40 @@
         <div class="contact_wrap">
           <label for="subject">SUBJECT　※</label><br>
           <input type="text" class="txt" name="subject" placeholder="お問い合わせ内容">
-          <!-- <?php if (isset($error['name']) && $error['name'] === 'blank') : ?>
-            <p class="error">*お名前を入力してください</p>
-        <?php endif; ?> -->
+          <?php if (isset($error['subject']) && $error['subject'] === 'blank') : ?>
+            <p class="error">*SUBJECTを入力してください</p>
+        <?php endif; ?>
         </div>
         <div class="contact_wrap">
           <label for="name">NAME　※</label><br>
           <input type="text" class="txt" name="name" placeholder="お名前を漢字でご記入ください">
-          <!-- <?php if (isset($error['name']) && $error['name'] === 'blank') : ?>
+          <?php if (isset($error['name']) && $error['name'] === 'blank') : ?>
               <p class="error">*お名前を入力してください</p>
-          <?php endif; ?> -->
+          <?php endif; ?>
         </div>
         <div class="contact_wrap">
           <label for="name">カナ　※</label><br>
           <input type="text" class="txt" name="kana" placeholder="お名前をカタカナでご記入ください">
-          <!-- <?php if (isset($error['name']) && $error['name'] === 'blank') : ?>
-            <p class="error">*お名前を入力してください</p>
-        <?php endif; ?> -->
+          <?php if (isset($error['kana']) && $error['kana'] === 'blank') : ?>
+            <p class="error">*カタカナでお名前を入力してください</p>
+        <?php endif; ?>
         </div>
         <div class="contact_wrap">
           <label for="email">メールアドレス　※</label><br>
           <input type="text" class="txt" name="email" placeholder="メールアドレス">
-          <!-- <?php if (isset($error['name']) && $error['name'] === 'blank') : ?>
+          <?php if (isset($error['email']) && $error['email'] === 'blank') : ?>
               <p class="error">*メールアドレスを入力して下さい</p>
-          <?php endif; ?> -->
+          <?php endif; ?>
+          <?php if (isset($error['email']) && $error['email'] === 'email') : ?>
+              <p class="error">*メールアドレスを正しく入力して下さい</p>
+          <?php endif; ?>
         </div>
         <div class="contact_wrap">
           <label for="message">お問い合わせ　※</label><br>
           <textarea id="message" name="message" placeholder="メッセージ"></textarea>
-          <!-- <?php if (isset($error['name']) && $error['name'] === 'blank') : ?>
+          <?php if (isset($error['message']) && $error['message'] === 'blank') : ?>
               <p class="error">*お問い合わせ内容をご記入ください</p>
-          <?php endif; ?> -->
+          <?php endif; ?> 
         </div>
         <div class="kome">
           <p>※必須</p>

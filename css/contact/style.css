@@ -201,6 +201,11 @@ textarea {
   background: #134767;
 }
 
+.error {
+  color: red;
+  font-size: 18px;
+}
+
 footer {
   padding: 20px;
   margin-top: 50px;
