@@ -1,3 +1,25 @@
+<?php
+session_start();
+
+function h($value)
+{
+    return htmlspecialchars($value, ENT_QUOTES);
+}
+
+// 入力画面からのアクセスでなければ、戻す
+if (!isset($_SESSION['form'])) {
+    header('Location: contact.php');
+    exit();
+} else {
+    $post = $_SESSION['form'];
+}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  
+  unset($_SESSION['form']);
+  header('Location: error.html');
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="jp">
 
@@ -30,7 +52,7 @@
                 <p>SUBJECT : </p>
               </th>
               <td>
-                <?php echo htmlspecialchars($post['name']); ?>
+                <?php echo h($post['subject']); ?>
               </td>
             </tr>
             <tr>
@@ -38,15 +60,7 @@
                 <p>NAME : </p>
               </th>
               <td>
-                <?php echo htmlspecialchars($post['name']); ?>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <p>名前 : </p>
-              </th>
-              <td>
-                <?php echo htmlspecialchars($post['name']); ?>
+                <?php echo h($post['name']); ?>
               </td>
             </tr>
             <tr>
@@ -54,7 +68,7 @@
                 <p>カナ : </p>
               </th>
               <td>
-                <?php echo htmlspecialchars($post['email']); ?>
+                <?php echo h($post['kana']); ?>
               </td>
             </tr>
             <tr>
@@ -62,7 +76,7 @@
                 <p>メールアドレス : </p>
               </th>
               <td>
-                <?php echo htmlspecialchars($post['contents']); ?>
+                <?php echo h($post['email']); ?>
               </td>
             </tr>
             <tr>
@@ -70,13 +84,14 @@
                 <p>お問い合わせ : </p>
               </th>
               <td>
-                <?php echo htmlspecialchars($post['message']); ?>
+                <?php echo h($post['message']); ?>
               </td>
             </tr>
           </table>
           <div class="botan">
             <div class="back">
               <button type="button" onclick="history.back()">戻る</button>
+              <!-- <a href="contact.php" class="a">戻る</a> -->
             </div>
             <div class="next">
               <input type="submit" vuleu="送信">
