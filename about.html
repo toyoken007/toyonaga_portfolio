@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="css/about/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Caveat rel=" stylesheet>
 </head>
 
 <body>
@@ -15,18 +14,23 @@
     <div class="header_wrap">
       <div class="header_h1">
         <h1>
-          <span class="p-1">TOYONAGA KENTA</span>
-          <span class="p-2">PortFolio</span>
+          <a href="index.html" class="p-1">TOYONAGA KENTA</a>
+          <a href="index.html" class="p-2">PortFolio</a>
         </h1>
       </div>
-      <nav class="header_list">
+      <nav class="header_list nav" id="js-nav">
         <ul>
           <li><a href="index.html">TOP</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="works.html">WORKS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="contact.php">CONTACT</a></li>
         </ul>
       </nav>
+      <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
   <main>
@@ -77,6 +81,9 @@
   <footer>
     <p>&copy;2022/TOYOKEN</p>
   </footer>
+  <script src="js/jquery.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

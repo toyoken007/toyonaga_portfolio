@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TOYOKENportfolio</title>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/node_modules/slick.css" /><!--スリック読むやつ-->
   <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    href="css/node_modules/slick-theme.css" /><!--スリック読むやつ-->
   <link rel="stylesheet" href="css/top/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Caveat rel=" stylesheet>
 </head>
 
 <body>
@@ -18,56 +17,50 @@
     <div class="header_wrap">
       <div class="header_h1">
         <h1>
-          <span class="p-1">TOYONAGA KENTA</span>
-          <span class="p-2">PortFolio</span>
+          <a href="index.html" class="p-1">TOYONAGA KENTA</a>
+          <a href="index.html" class="p-2">PortFolio</a>
         </h1>
       </div>
-      <nav class="header_list">
+      <nav class="header_list nav" id="js-nav">
         <ul>
           <li><a href="index.html">TOP</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="works.html">WORKS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="contact.php">CONTACT</a></li>
         </ul>
       </nav>
+      <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
   <main>
-    <!-- <div class="key_visual">
-      <img src="image/hatake.jpg" alt="虹の画像">
-    </div> -->
-    <div class="key_visual">
-      <div class="slider pc">
-        <div>
-          <img src="image/hatake.jpg" alt="畑の画像">
+    <div>
+      <div class="key_visual">
+        <div class="slider pc">
+          <div class="img1">
+            <!-- <img src="image/hatake.jpg" alt="畑の画像"> -->
+          </div>
+          <div class="img2">
+            <!-- <img src="image/umi.jpg" alt="海の画像"> -->
+          </div>
+          <div class="img3">
+            <!-- <img src="image/niji.jpg" alt="虹の画像"> -->
+          </div>
         </div>
-        <div>
-          <img src="image/umi.jpg" alt="海の画像">
-        </div>
-        <div>
-          <img src="image/niji.jpg" alt="虹の画像">
-        </div>
-      </div>
-      <div class="slider sp">
-        <div>
-          <img src="image/hatake01_sp.jpg" alt="畑の画像">
-        </div>
-        <!-- <div>
-          <img src="image/umi.jpg" alt="海の画像">
-        </div> -->
-        <!-- <div>
-          <img src="image/niji.jpg" alt="虹の画像">
-        </div> -->
       </div>
     </div>
   </main>
   <footer>
     <p>&copy;2022/TOYOKEN</p>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/jquery.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><!--ゲーム機-->
+  <script type="text/javascript" src="js/slick.min.js"></script><!--ソフト-->
   <script src="js/slick.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

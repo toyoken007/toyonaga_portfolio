@@ -90,8 +90,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </table>
           <div class="botan">
             <div class="back">
-              <button type="button" onclick="history.back()">戻る</button>
-              <!-- <a href="contact.php" class="a">戻る</a> -->
+              <!-- <button type="button" onclick="history.back()">戻る</button> -->
+              <a href="contact.php" class="a">戻る</a>
             </div>
             <div class="next">
               <input type="submit" vuleu="送信">
