@@ -11,6 +11,7 @@ img {
 }
 
 body {
+  color: #3a3a3a;
   font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 
@@ -30,14 +31,14 @@ body {
 }
 
 .content {
-  /* background-color: #dbe5ff; */
   margin: 100px auto;
-  width: 85%;
+  max-width: 810px;
+  width: 100%;
   padding: 30px;
 }
 
 .content_h2 {
-  width: 760px;
+  width: 740px;
   margin: 0 auto;
 }
 .content h2 {
@@ -55,7 +56,7 @@ body {
 }
 
 .form_kakunin th {
-  text-align: right;
+  text-align: end;
   padding: 10px;
   font-size: 20px;
   width: 200px;
@@ -64,47 +65,57 @@ body {
 
 .form_kakunin td {
   padding: 10px;
+  text-align: left;
 }
 
 .botan {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 50px;
+  column-gap: 40px;
+  max-width: 760px;
+  width: 100%;
 }
 
-.back {
-  margin-right: 30px;
-  margin-top: 10px;
-}
-
-.back button {
+.a {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   width: 300px;
   height: 67px;
+  justify-content: center;
+  align-items: center;
   border-radius: 0.8em;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: rgb(149, 207, 255);
-  border-radius: 0.8em;
-  color: rgb(0, 0, 0);
   text-decoration: none;
+  font-size: 20px;
   border: 2px solid;
-  border-color: rgb(3, 3, 3);
+  text-decoration: none;
+  color: #1f1f1f;
+}
+.back:hover {
+  background-color: rgb(143, 191, 255);
+  font-size: 20px;
+  border-radius: 0.8em;
+  transition: 0.7s;
 }
 
 input {
-  margin-top: 10px;
   width: 300px;
   height: 67px;
   border-radius: 0.8em;
   font-size: 20px;
-  font-weight: bold;
-  background-color: rgb(149, 207, 255);
-  color: rgb(0, 0, 0);
+  cursor: pointer;
+  cursor: hand;
+  color: #1f1f1f;
   border: 2px solid;
-  border-color: rgb(3, 3, 3);
+  border-color: #000000;
+  background-color: #ffffff;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+input:hover {
+  background-color: rgb(143, 191, 255);
+  font-size: 20px;
+  border-radius: 0.8em;
+  transition: 0.7s;
 }
 
 .tyui p {
@@ -113,4 +124,33 @@ input {
   color: red;
   text-align: center;
 }
+
+@media screen and (max-width:768px) {
+
+  .content {
+    width: 414px;
+  }
+  .content_h2 {
+    width: 100%;
+    max-width: 364px;
+  }
+  .content h2 {
+    font-size: 12px;
+  }
+  .form_kakunin {
+    width: 100%;
+    max-width: 800px;
+  }
+  .botan {
+    width: 100%;
+    max-width: 800px;
+  }
+  .back a {
+    width: 150px;
+  }
+  .next input {
+    width: 150px;
+  }
+}
+
 
