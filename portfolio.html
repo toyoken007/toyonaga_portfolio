@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIOページ</title>
+  <link rel="stylesheet" href="css/portfolio/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_wrap">
+      <div class="header_h1">
+        <h1>
+          <a href="index.html" class="p-1">TOYONAGA KENTA</a>
+          <a href="index.html" class="p-2">PortFolio</a>
+        </h1>
+      </div>
+      <nav class="header_list nav" id="js-nav">
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="works.html">WORKS</a></li>
+          <li><a href="contact.php">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="page_title">
+      <p>WORKS/SKILLS</p>
+    </div>
+
+    <div class="page_wrap">
+      <div class="page_img">
+        <img src="image/portfolio_pc_sp.gif" alt="PCとスマホ画像">
+      </div>
+      <p>PORTFOLIO</p>
+    </div>
+    
+    <div class="skill_wrap">
+      <div class="skill">
+        <h2>＜WEBサイトについて＞</h2>
+        <table>
+          <tr>
+            <th>使用スキル：</th>
+            <td>HTML,CSS,PHP,javascript</td>
+          </tr>
+          <tr>
+            <th>使用ツール：</th>
+            <td>vsCode,PhotoShop,XAMPP,GitHub,
+                Sourcetree</td>
+          </tr>
+          <tr>
+            <th>アクセス先：</th>
+            <td><a href="https://ue-takuken.com/toyonaga_portfolio">https://ue-takuken.com/toyonaga_portfolio</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="comment">
+        <h2>＜WEB作成にあたって＞</h2>
+        <p>初めてスライダーを実装してみた。HTMLで画像を入れて
+            実装してみたが、うまくいかなかったのでCSSの方で
+            画像を入れてみたら上手くいった。今回、初めて
+            javascript(jquery)を使ったので思ったようにいかず、
+            自分でやり方を調べたり、どうしても分からなかった所は
+            友達に聞いたり、確認してもらったりした。ハンバーガー
+            メニューも初めて実装したが、バーガーの位置がズレて
+            試行錯誤で完成した。
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy;2022/TOYOKEN</p>
+  </footer>
+  <script src="js/jquery.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/burger.js"></script>
+</body>
+
+</html>
