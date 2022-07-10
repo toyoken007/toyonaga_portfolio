@@ -234,6 +234,13 @@ footer p {
     color: rgba(0, 0, 0, .5);
   }
 
+  .header__hamburger.hamburger.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    margin-top: 75px;
+  }
+
   .active ul {
     display: flex;
     width: 100%;
@@ -248,7 +255,7 @@ footer p {
   }
 
   .header__hamburger.active {
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
   .hamburger {
