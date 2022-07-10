@@ -13,7 +13,6 @@ img {
 }
 
 body {
-  /* font-family: 'Caveat', cursive; */
   font-family: 'Vesper Libre', serif;
 }
 
@@ -150,6 +149,7 @@ select {
 .option {
   font-size: 20px;
 }
+
 label {
   font-size: 15px;
   display: block;
@@ -265,27 +265,34 @@ footer p {
   .header_list ul {
     display: none;
   }
+
   form {
     align-items: center;
   }
+
   .contact_comment {
     width: 350px;
     margin: 0 auto;
   }
+
   .kome {
     width: 350px;
     text-align: justify;
     margin: 30px auto 0;
   }
+
   select {
     width: 350px;
   }
+
   .contact_wrap input {
     width: 350px;
   }
+
   textarea {
     width: 350px;
   }
+
   .guidance {
     width: 350px;
     margin: 45px auto 0;

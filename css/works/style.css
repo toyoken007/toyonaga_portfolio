@@ -13,7 +13,6 @@ img {
 }
 
 body {
-  /* font-family: 'Caveat', cursive; */
   font-family: 'Vesper Libre', serif;
 }
 
@@ -142,11 +141,8 @@ main {
   padding: 5px;
   font-size: 20px;
   background: #f4f4f4;
-  /*背景色*/
   border-left: solid 5px #7db4e6;
-  /*左線*/
   border-bottom: solid 3px #d7d7d7;
-  /*下線*/
   margin-bottom: 20px;
   font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
@@ -220,14 +216,11 @@ p {
 .tool_list {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 750px;
   margin: 0 auto;
   color: #668ad8;
-  /*文字色*/
   border: dashed 2px #668ad8;
-  /*破線 太さ 色*/
   background: #f1f8ff;
-  /*背景色*/
   padding: 1px 10px 1px 30px;
 }
 
@@ -314,7 +307,7 @@ footer p {
     flex-direction: column;
     width: 250px;
   }
-  
+
   /* バーガー*/
   .header_wrap {
     align-items: center;

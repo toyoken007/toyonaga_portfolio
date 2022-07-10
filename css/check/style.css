@@ -22,8 +22,8 @@ body {
   padding: 15px;
   color: #010079;
   text-shadow: 0 0 5px white;
-  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px, #e9f4ff 3px, #e9f4ff 7px);
 }
 
 .kakunin {
@@ -41,11 +41,15 @@ body {
   width: 740px;
   margin: 0 auto;
 }
+
 .content h2 {
   text-align: center;
-  background: #f4f4f4;/*背景色*/
-  border-left: solid 5px #7db4e6;/*左線*/
-  border-bottom: solid 3px #d7d7d7;/*下線*/
+  background: #f4f4f4;
+  /*背景色*/
+  border-left: solid 5px #7db4e6;
+  /*左線*/
+  border-bottom: solid 3px #d7d7d7;
+  /*下線*/
   margin-bottom: 20px;
   font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
@@ -59,13 +63,13 @@ body {
   text-align: end;
   padding: 10px;
   font-size: 20px;
-  width: 200px;
   vertical-align: top;
 }
 
 .form_kakunin td {
   padding: 10px;
   text-align: left;
+  vertical-align: top;
 }
 
 .botan {
@@ -91,6 +95,7 @@ body {
   text-decoration: none;
   color: #1f1f1f;
 }
+
 .back:hover {
   background-color: rgb(143, 191, 255);
   font-size: 20px;
@@ -111,6 +116,7 @@ input {
   background-color: #ffffff;
   font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
+
 input:hover {
   background-color: rgb(143, 191, 255);
   font-size: 20px;
@@ -128,29 +134,35 @@ input:hover {
 @media screen and (max-width:768px) {
 
   .content {
-    width: 414px;
+    max-width: 414px;
+    width: 100%;
   }
+
   .content_h2 {
     width: 100%;
     max-width: 364px;
   }
+
   .content h2 {
     font-size: 12px;
   }
+
   .form_kakunin {
     width: 100%;
     max-width: 800px;
+    font-size: 13px;
   }
+
   .botan {
     width: 100%;
     max-width: 800px;
   }
+
   .back a {
-    width: 150px;
+    width: 120px;
   }
+
   .next input {
-    width: 150px;
+    width: 120px;
   }
 }
-
-

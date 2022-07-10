@@ -3,25 +3,25 @@ session_start();
 
 function h($value)
 {
-    return htmlspecialchars($value, ENT_QUOTES);
+  return htmlspecialchars($value, ENT_QUOTES);
 }
 
 // 入力画面からのアクセスでなければ、戻す
 if (!isset($_SESSION['form'])) {
-    header('Location: contact.php');
-    exit();
+  header('Location: contact.php');
+  exit();
 } else {
-    $post = $_SESSION['form'];
+  $post = $_SESSION['form'];
 }
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  
+
   unset($_SESSION['form']);
   header('Location: error.html');
   exit();
 }
 ?>
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
@@ -90,7 +90,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </table>
           <div class="botan">
             <div class="back">
-              <!-- <button type="button" onclick="history.back()">戻る</button> -->
               <a href="contact.php" class="a">戻る</a>
             </div>
             <div class="next">
@@ -105,7 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </main>
   <footer>
-    
+
   </footer>
 </body>
+
 </html>
