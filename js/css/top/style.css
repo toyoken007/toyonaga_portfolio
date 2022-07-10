@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+body {
+  font-family: 'Vesper Libre', "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  padding: 20px 0;
+  letter-spacing: 4px;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+}
+
+h1:hover {
+  opacity: 0.8;
+}
+
+.header_list {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_list li {
+  font-size: 22px;
+  text-shadow: 3px 4px 4px #000000;
+}
+
+.p-1 {
+  font-size: 25px;
+  text-shadow: 3px 4px 4px #000000;
+  color: white;
+}
+
+.p-2 {
+  width: 100px;
+  font-size: 20px;
+  text-shadow: 3px 4px 4px #000000;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.header_list.nav.active {
+  display: flex;
+  align-items: center;
+}
+
+.header_list li {
+  list-style: none;
+}
+
+.header_list ul {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.key_visual {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+.slider div {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.img1 {
+  background-image: url(../../image/hatake.jpg);
+}
+
+.img2 {
+  background-image: url(../../image/umi.jpg);
+}
+
+.img3 {
+  background-image: url(../../image/niji.jpg);
+}
+
+/* .key_visual img {
+  height: auto;
+  max-width: 100%;
+} */
+
+footer {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 2;
+}
+
+footer p {
+  font-size: 12px;
+  z-index: 2;
+  color: aliceblue;
+  text-shadow: 3px 4px 4px #000000;
+}
+
+.slider {
+  visibility: hidden;
+}
+
+.slider>div {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider.slick-initialized {
+  visibility: visible;
+}
+
+.slick-prev,
+.slick {
+  z-index: 2;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+/* .pc {
+  display: block;
+}
+.sp {
+  display: none;
+} */
+
+@media screen and (max-width:768px) {
+
+  /* .pc {
+    display: none;
+  } */
+  /* .sp {
+    display: block;
+    background-size: cover;
+  } */
+  .header_list ul {
+    display: none;
+  }
+
+  .key_visual img {
+    height: 1100px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .slider div {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* バーガー*/
+  /* .burger {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  margin: 0 0 0 80px;
+} */
+  .header_wrap {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header_h1 {
+    width: 250px;
+  }
+
+  .active {
+    background-color: rgb(185, 202, 255);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    z-index: 30;
+    color: rgba(0, 0, 0, .5);
+  }
+
+  .active ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .header__hamburger {
+    width: 48px;
+    height: 100%;
+    right: 0;
+  }
+
+  .header__hamburger.active {
+    margin-right: 20px;
+  }
+
+  .hamburger {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+    transition: ease .4s;
+    display: block;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 0;
+  }
+
+  .hamburger span:nth-child(2) {
+    margin: 8px 0;
+  }
+
+  .hamburger span:nth-child(3) {
+    top: 0;
+  }
+
+  .header_list.active {
+    transform: translateX(0);
+  }
+
+  .hamburger.active span:nth-child(1) {
+    top: 8px;
+    transform: rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+
+  }
+
+  .hamburger.active span:nth-child(3) {
+    top: -13px;
+    transform: rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    display: none;
+  }
+}

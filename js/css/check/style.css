@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+body {
+  color: #3a3a3a;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.check_h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  padding: 15px;
+  color: #010079;
+  text-shadow: 0 0 5px white;
+  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+
+.kakunin {
+  color: #ffffff;
+}
+
+.content {
+  margin: 100px auto;
+  max-width: 810px;
+  width: 100%;
+  padding: 30px;
+}
+
+.content_h2 {
+  width: 740px;
+  margin: 0 auto;
+}
+.content h2 {
+  text-align: center;
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  margin-bottom: 20px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.form_kakunin {
+  width: 800px;
+  margin: 50px auto 0;
+}
+
+.form_kakunin th {
+  text-align: end;
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.form_kakunin td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.botan {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  column-gap: 40px;
+  max-width: 760px;
+  width: 100%;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 67px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8em;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+.back:hover {
+  background-color: rgb(143, 191, 255);
+  font-size: 20px;
+  border-radius: 0.8em;
+  transition: 0.7s;
+}
+
+input {
+  width: 300px;
+  height: 67px;
+  border-radius: 0.8em;
+  font-size: 20px;
+  cursor: pointer;
+  cursor: hand;
+  color: #1f1f1f;
+  border: 2px solid;
+  border-color: #000000;
+  background-color: #ffffff;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+input:hover {
+  background-color: rgb(143, 191, 255);
+  font-size: 20px;
+  border-radius: 0.8em;
+  transition: 0.7s;
+}
+
+.tyui p {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+  .content {
+    max-width: 414px;
+    width: 100%;
+  }
+  .content_h2 {
+    width: 100%;
+    max-width: 364px;
+  }
+  .content h2 {
+    font-size: 12px;
+  }
+  .form_kakunin {
+    width: 100%;
+    max-width: 800px;
+    font-size: 13px;
+  }
+  .botan {
+    width: 100%;
+    max-width: 800px;
+  }
+  .back a {
+    width: 120px;
+  }
+  .next input {
+    width: 120px;
+  }
+}
+
+
