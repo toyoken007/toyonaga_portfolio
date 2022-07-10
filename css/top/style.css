@@ -113,11 +113,6 @@ a {
   background-image: url(../../image/niji.jpg);
 }
 
-/* .key_visual img {
-  height: auto;
-  max-width: 100%;
-} */
-
 footer {
   padding: 20px;
   position: absolute;
@@ -162,22 +157,8 @@ footer p {
   right: 10px;
 }
 
-/* .pc {
-  display: block;
-}
-.sp {
-  display: none;
-} */
-
 @media screen and (max-width:768px) {
 
-  /* .pc {
-    display: none;
-  } */
-  /* .sp {
-    display: block;
-    background-size: cover;
-  } */
   .header_list ul {
     display: none;
   }
@@ -195,13 +176,6 @@ footer p {
     background-repeat: no-repeat;
   }
 
-  /* バーガー*/
-  /* .burger {
-  width: 40px;
-  height: 40px;
-  background-color: blue;
-  margin: 0 0 0 80px;
-} */
   .header_wrap {
     align-items: center;
     justify-content: space-around;

@@ -51,18 +51,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WORKS</title>
+  <title>CONTACT</title>
   <link rel="stylesheet" href="css/contact/style.css">
 </head>
 
 <body>
-<header>
+  <header>
     <div class="header_wrap">
       <div class="header_h1">
         <h1>
@@ -157,8 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <footer>
     <p>&copy;2022/TOYOKEN</p>
   </footer>
-  <script src="js/jquery.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/burger.js"></script>
   <script>
     function changeColor(hoge) {
